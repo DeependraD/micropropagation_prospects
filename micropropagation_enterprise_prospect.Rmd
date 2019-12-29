@@ -1,0 +1,228 @@
+---
+title             : "Micropropagation of olive: An enterprise prospect review for Nepal"
+shorttitle        : "Micropropagation of olive"
+
+author: 
+  - name          : "Deependra Dhakal"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Gokuleshwor, Baitadi"
+    email         : "ddhakal.rookie@gmail.com"
+  - name          : "Samita Paudel"
+    affiliation   : "2"
+
+affiliation:
+  - id            : "1"
+    institution   : "Gokuleshwor Agriculture and Animal Science College"
+  - id            : "2"
+    institution   : "Institute of Agriculture and Animal Science"
+
+authornote: |
+  Author 1 is a faculty associtated to Department of Plant Breeding and Genetics, GAASC, Tribhuwan University
+
+  Author 2 is an MS (Agricultural Economics) candidate.
+
+abstract: |
+  <!-- One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline. -->
+
+  <!-- Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines. -->
+
+  <!-- One sentence clearly stating the **general problem** being addressed by  this particular study. -->
+
+  <!-- One sentence summarizing the main result (with the words "**here we show**" or their equivalent). -->
+
+  <!-- Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge. -->
+
+  <!-- One or two sentences to put the results into a more **general context**. -->
+
+  <!-- Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline. -->
+
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["./bibliography/bibliography.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+require(tidyverse)
+library("papaja")
+```
+
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+
+# Introduction
+
+Micropropagation technique is effective for rapid multiplication of a wide variety of crops. Popularly tissue cultured crops include, but is not limited to banana ([@banerjee1985tissue, @strosse2004banana, @wong1986vitro]), strawberry ([@jones1988production, @passey2003adventitious]), apple ([@lane1978regeneration]), potato ([@roca1978tissue]), citrus fruits ([@bitters1972investigations], @bhat1992regeneration).
+
+
+## Private sector tissue culture initiatives in Nepal
+
+Botanical Enterprises Pvt. Ltd.
+- In vitro propagation of many species of orchid, potato, fodder, Chrysanthemum, Gerbera, African violet, Lily etc.
+- Exports directly to The Netherlands.
+
+Nepal Biotech Nursery
+- Produce banana, orchid, and ornamental plants by tissue culture and non-sterile sand rooting technique.
+
+
+Research Laboratory for Agriculture Biotechnology and Biochemistry (RALBB)
+- Tissue culture propagation for pine, Artocarpus, Brassica.
+- Anther culture of cold tolerant rice
+- Modest facilities for DNA work by PCR technology and enzyme analysis.
+- Facilities used for research and teaching.
+
+Green Research and Technology (GREAT)
+- Developing virus testing and elimination facilities on horticultural crops such as potato, citrus, banana, cardamom, strawberry, and some ornamental plants using tissue culture techniques.
+- Has modest screen-house facility for indexing against citrus greening disease.
+
+## Economics of tissue culture facility
+
+For a project profile of with an annual production capacity of 10,000, accounting for all costs (fixed and variable), it is estimated that individual seedlings' should be priced at NRs 55-60, to cover capital and operating expenses each year. 
+
+Capital expenditure comprise of laboratory room block construction, along with its holding, electrification and drainage unit, machinery, equipments, tools and shade house and miscellaneous fixed asset. Variable costs are laboratory reagents, disposables, plant material stock, utilities, consumables and marketing etc. 
+
+Similarly, accounting for survial rate of plantlets (which is estimated to be around 90%), the returns are estimated to be more consistent than that with field propagated crops.
+
+The direct micropropagation expenses can be divided into two groups -- operating costs which include labor, material and electricity and wearing out expenses.
+
+# Methods
+
+Tissue culture operation is undertaken in controlled environment with accurately coordinated temporal activities. Most of these activities are adapted for the protocols defined elsewhere while maintaining foundational aspect of a culturing experiment. A general guideline, providing procedure and background on the topic is given by @george2008plant .Some of the ideas surrounding basic set-up of a tissue culturing facility and plant tissue manipulation for regeneration of plantlets is described herein.
+
+It is to be marked that the scale of operation determines to a large extent the exact quantity and sophistication of instruments/equipments. Naturally, a small scale trialing facility cannot operate as efficiently as a large operating firm. This directly affects the unit costs of outputs (essentially the regenerated plantlets). Therefore, except when conducting an optimization experiment, it is recommended that tissue culture be run in a large facility in a optimized routine.
+
+For academic institutions, a simple set-up accomodating all culturing apparatus as well as operational activities can be conducted in a laboratory room. This facility should ideally be secluded from other block, so as to check contamination.
+
+
+```{r import-data}
+readxl::read_xlsx("./data/cost_estimation.xlsx", sheet = "cost", skip = 3)
+```
+
+<!-- ## Participants -->
+
+## Material
+
+Following apparatuses are required for the preparation of tissue culture:
+
+1. Forceps (small, long and extra long)
+2. Scalpel and scalpel blades (small, long and extra long)
+3. Stereo microscopes
+4. Table mount lamps/ halogen capsule bulbs
+5. Glass slides and coverslips
+6. Vernier calliper
+7. Petri dishes with cover (100 mm)
+8. Scissors (Secateur, locking type and normal)
+9. Filter papers
+10. Beaker (500 ml and 200ml)
+11. Erlenmayer flask 250 ml (3-4)
+12. Test tubes (50 ml or 100 ml) and holding platform
+13. Pipette
+14. Disposable pipette tips
+15. Microbox or bottle (500 ml and 1000 ml)
+16. Cotton roll
+17. Tissue paper (dry)
+18. Gloves (Nitrile or latex)
+19. Ethanol or isopropyl alcohol (200 ml)
+20. Detergent
+21. Plastic tubs: 4 (for bathing vessels and storing cleaned vessels)
+22. Hard nylon brush: 3-5 (for cleaning vessels)
+23. pH meter
+24. pH buffer
+25. Autoclaving trays
+26. Tween-20 (mild detergent for surface cleaning of explants)
+27. Incubation chamber
+
+
+## Procedure
+
+The steps involved in any tissue culture operation are outlined below:
+
+1. Preparation of instruments and culture medium
+2. Sterilization of instruments and culture medium
+3. Preparation of explant
+4. Inoculation of explant
+5. Incubation for growth
+6. Acclimatization of plantlets
+
+After obtaining the instruments, sterilize them. A newspaper may be used to wrap the instruments around before leaving them for autoclaving.
+
+Clean and sterile culture vessels should be obtained after each run of culture by:
+
+1. First steamed for about 30-45 minutes (using autoclave)
+2. Immerse in a pool of chromic acid for 16 hours
+3. Rinse with water in a separate pool to wash off chromic acid
+4. Then clean the vessal with detergent solution using nylon brush
+5. Clean the detergent in running water
+6. Oven dry the vessels at 60-80 degree celcius.
+
+Preparation of media
+
+@george2008components has reported with extensive details on macro- and micro- element constitution of tissue culture media.
+
+1. Macro elements
+2. Micro elements
+3. Vitamins
+4. Amino acids
+5. Sucrose (Source of carbohydrate)
+6. Deionized water
+7. Agar
+
+For measuring solvents and media elements (mostly mineral salts), graduated cylinder for liquids and precise (milligram scale) measuring balances are required.
+
+After mixing the salts in deionized water and dissolving them, the pH needs to be maintained in solution. Plants best obtain the nutrients in a pH range between 5.6 to 5.8.
+
+The nutrient solution is prepared in Erlenmayer flasks or in test tubes (100 ml). Finally mixing of nutrient solution (100ml) and agar agar (8gm) in flask gives a nutrient media.
+
+The flasks containing nutrient media, together with other equipments are then autoclaved (in 120 degree celcius at 15 pascal pressure)
+
+
+## Data analysis
+
+We used `r cite_r("./bibliography/bibliography.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# Conclusion
+
+# Acknowledgement
+
+I am thankful to the Chairperson of college, Mr. Santosh Joshi, for inspiring thoughts on topic and, my wife Samita for encouraging me throughout the writing process.
+
+# References
+
+```{r create-bibliography}
+r_refs(file = "./bibliography/bibliography.bib")
+```
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
